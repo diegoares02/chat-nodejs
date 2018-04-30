@@ -15,6 +15,6 @@ $(function () {
         message.val('');
     });
     socket.on('mensaje-del-servidor',function(data){
-        chat.append(data + "<br>");
+        chat.append('<p class="text-primary">' + data + "<br>");
     })
 })
